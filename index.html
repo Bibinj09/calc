@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/style.css">
+
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="screenback">
+                <h1 class="calculatortxt">Calculator</h1>
+                <input id="result" type="text" class="calculator-screen" value="" disabled/>
+            </div>
+            <div class="calculator-buttons row g-2">
+                <div class="col-6">
+                    <button type="button" value="AC" class="btn first w-100" onclick="clearAll()">AC</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="%" class="btn secondary w-100" onclick="display('%')">%</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="/" class="btn secondary w-100" onclick="display('/')">&divide;</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="7" class="btn dark w-100" onclick="display(7)">7</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="8" class="btn dark w-100" onclick="display(8)">8</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="9" class="btn dark w-100" onclick="display(9)">9</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="*" class="btn secondary w-100" onclick="display('*')">&times;</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="4" class="btn dark w-100" onclick="display(4)">4</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="5" class="btn dark w-100" onclick="display(5)">5</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="6" class="btn dark w-100" onclick="display(6)">6</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="-" class="btn secondary w-100" onclick="display('-')">-</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="1" class="btn dark w-100" onclick="display(1)">1</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="2" class="btn dark w-100" onclick="display(2)">2</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="3" class="btn dark w-100" onclick="display(3)">3</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="+" class="btn secondary w-100" onclick="display('+')">+</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="0" class="btn dark w-100" onclick="display(0)">0</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="." class="btn dark w-100" onclick="display('.')">.</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="back" class="btn dark w-100" onclick="back()">&#x232B;</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" value="=" class="btn orng w-100" onclick="equal()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./cal.js"></script>
+</html>
+
